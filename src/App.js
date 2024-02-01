@@ -27,15 +27,10 @@ function App() {
     setFormData({...initialFormState});
   }
   const handleRecipeDelete = (event) => {
-    console.log(event.target);
     setRecipes((currentResults) =>
     currentResults.filter((ignored, index) => Number(index) !== Number(event.target.id))
   );
-//    index !== event.target.id
   };
-
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
 
   
   return (
